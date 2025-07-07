@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delice Desserts</title>
-    <link rel="icon" href="cheesecake.png" type="image/png">
+    <link rel="icon" href="/cheesecake.png" type="image/png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap');
         
@@ -47,7 +47,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('pexels-ivan-samkov-8101695.jpg') center/cover;
+            background: url('/placeholder.svg?height=1080&width=1920') center/cover;
             opacity: 0.1;
             z-index: 1;
         }
@@ -688,35 +688,574 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 3rem;
-            }
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero h1 {
+        font-size: 4rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+}
 
-            .section-title {
-                font-size: 2.5rem;
-            }
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2.8rem;
+    }
+    
+    .cheesecake-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+    }
+    
+    .about-content,
+    .form-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .form-container {
+        padding: 50px 40px;
+    }
+    
+    .contact-info,
+    .location-info {
+        padding: 40px;
+    }
+}
 
-            .about-content,
-            .form-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .hero {
+        padding: 40px 0;
+        min-height: 90vh;
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+    
+    .hero-cta {
+        padding: 15px 25px;
+        font-size: 0.95rem;
+    }
+    
+    .section-header {
+        margin-bottom: 50px;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .cheesecake-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .cheesecake-item {
+        border-radius: 20px;
+    }
+    
+    .cheesecake-content {
+        padding: 25px 20px;
+    }
+    
+    .cheesecake-name {
+        font-size: 1.5rem;
+    }
+    
+    .cheesecake-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .price-badge {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+    
+    .order-button {
+        padding: 14px;
+        font-size: 0.95rem;
+    }
+    
+    .about-image {
+        height: 300px;
+        order: -1;
+    }
+    
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .about-text p:first-child {
+        font-size: 1.1rem;
+    }
+    
+    .form-container {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 25px;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 14px 16px;
+        font-size: 0.95rem;
+    }
+    
+    .star-rating {
+        gap: 6px;
+    }
+    
+    .star {
+        font-size: 1.8rem;
+    }
+    
+    .rating-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .submit-btn {
+        padding: 16px 30px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .feedback-info,
+    .reviews-section {
+        padding: 25px 20px;
+    }
+    
+    .contact-info,
+    .location-info {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    
+    .contact-item {
+        margin-bottom: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .map-placeholder {
+        height: 200px;
+        font-size: 1rem;
+    }
+    
+    .hours-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .social-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .social-links a {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
 
-            .cheesecake-grid {
-                grid-template-columns: 1fr;
-            }
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        min-height: 85vh;
+        padding: 30px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .hero .subtitle {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-cta {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        gap: 10px;
+    }
+    
+    .section {
+        padding: 50px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .section-badge {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+    
+    .cheesecake-grid {
+        gap: 25px;
+    }
+    
+    .cheesecake-item {
+        border-radius: 15px;
+    }
+    
+    .cheesecake-image {
+        height: 220px;
+    }
+    
+    .cheesecake-content {
+        padding: 20px 15px;
+    }
+    
+    .cheesecake-name {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .cheesecake-description {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+    
+    .cheesecake-details {
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+    
+    .size {
+        font-size: 0.8rem;
+    }
+    
+    .price-badge {
+        top: 15px;
+        right: 15px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .order-button {
+        padding: 12px;
+        font-size: 0.9rem;
+        border-radius: 25px;
+    }
+    
+    .about-image {
+        height: 250px;
+        border-radius: 15px;
+    }
+    
+    .about-text {
+        font-size: 0.95rem;
+    }
+    
+    .about-text p {
+        margin-bottom: 20px;
+    }
+    
+    .form-container {
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+    
+    .form-group textarea {
+        height: 100px;
+    }
+    
+    .star {
+        font-size: 1.6rem;
+    }
+    
+    .rating-text {
+        font-size: 0.9rem;
+    }
+    
+    .submit-btn {
+        padding: 14px 25px;
+        font-size: 0.95rem;
+        border-radius: 25px;
+    }
+    
+    .feedback-info h3,
+    .reviews-section h4 {
+        font-size: 1.2rem;
+    }
+    
+    .feedback-info,
+    .reviews-section {
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+    
+    .feedback-info li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    
+    .review-item {
+        margin-bottom: 20px;
+        padding-left: 15px;
+    }
+    
+    .review-text {
+        font-size: 0.9rem;
+    }
+    
+    .review-author {
+        font-size: 0.8rem;
+    }
+    
+    .contact-info,
+    .location-info {
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+    
+    .contact-item {
+        margin-bottom: 20px;
+    }
+    
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .contact-details h4 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+    
+    .contact-details p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .map-placeholder {
+        height: 180px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+    
+    .hours-grid {
+        font-size: 0.9rem;
+        gap: 8px;
+    }
+    
+    .special-orders {
+        padding-top: 20px;
+    }
+    
+    .special-orders h4 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .special-orders p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .footer {
+        padding: 30px 0;
+    }
+    
+    .footer p {
+        font-size: 0.9rem;
+    }
+    
+    .social-links {
+        margin-top: 20px;
+        gap: 12px;
+    }
+    
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+}
 
-            .form-container {
-                padding: 40px 30px;
-            }
+@media (max-width: 360px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .cheesecake-image {
+        height: 200px;
+    }
+    
+    .cheesecake-name {
+        font-size: 1.2rem;
+    }
+    
+    .form-container {
+        padding: 20px 12px;
+    }
+    
+    .contact-info,
+    .location-info {
+        padding: 20px 12px;
+    }
+}
 
-            .contact-info,
-            .location-info {
-                padding: 30px;
-            }
-        }
+/* Touch-friendly improvements for mobile */
+@media (hover: none) and (pointer: coarse) {
+    .cheesecake-item:hover {
+        transform: none;
+    }
+    
+    .order-button:hover,
+    .submit-btn:hover,
+    .hero-cta:hover {
+        transform: none;
+    }
+    
+    .star:hover {
+        transform: none;
+    }
+    
+    .social-links a:hover {
+        transform: none;
+    }
+    
+    /* Increase touch targets */
+    .star {
+        padding: 5px;
+        margin: 0 2px;
+    }
+    
+    .order-button,
+    .submit-btn {
+        min-height: 48px;
+    }
+    
+    .hero-cta {
+        min-height: 48px;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .cheesecake-image,
+    .about-image,
+    .hero::before {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
     </style>
 </head>
 <body>
@@ -750,7 +1289,7 @@
 
             <div class="cheesecake-grid">
                 <div class="cheesecake-item">
-                    <div class="cheesecake-image" style="background-image: url('pexels-anna-guerrero-788383-4078187.jpg');">
+                    <div class="cheesecake-image" style="background-image: url('/pexels-anna-guerrero-788383-4078187.jpg');">
                         <div class="price-badge">₹124.99</div>
                     </div>
                     <div class="cheesecake-content">
@@ -764,7 +1303,7 @@
                 </div>
 
                 <div class="cheesecake-item">
-                    <div class="cheesecake-image" style="background-image: url('pexels-cescrz-3185509.jpg');">
+                    <div class="cheesecake-image" style="background-image: url('/pexels-cescrz-3185509.jpg');">
                         <div class="price-badge">₹127.99</div>
                     </div>
                     <div class="cheesecake-content">
@@ -778,7 +1317,7 @@
                 </div>
 
                 <div class="cheesecake-item">
-                    <div class="cheesecake-image" style="background-image: url('pexels-wendywei-3071870.jpg');">
+                    <div class="cheesecake-image" style="background-image: url('/pexels-wendywei-3071870.jpg');">
                         <div class="price-badge">₹129.99</div>
                     </div>
                     <div class="cheesecake-content">
@@ -792,7 +1331,7 @@
                 </div>
 
                 <div class="cheesecake-item">
-                    <div class="cheesecake-image" style="background-image: url('pexels-anna-guerrero-788383-4078187.jpg');">
+                    <div class="cheesecake-image" style="background-image: url('/pexels-anna-guerrero-788383-4078187.jpg');">
                         <div class="price-badge">₹126.99</div>
                     </div>
                     <div class="cheesecake-content">
@@ -806,7 +1345,7 @@
                 </div>
 
                 <div class="cheesecake-item">
-                    <div class="cheesecake-image" style="background-image: url('pexels-cescrz-3185509.jpg');">
+                    <div class="cheesecake-image" style="background-image: url('/pexels-cescrz-3185509.jpg');">
                         <div class="price-badge">₹131.99</div>
                     </div>
                     <div class="cheesecake-content">
@@ -820,7 +1359,7 @@
                 </div>
 
                 <div class="cheesecake-item">
-                    <div class="cheesecake-image" style="background-image: url('pexels-wendywei-3071870.jpg');">
+                    <div class="cheesecake-image" style="background-image: url('/pexels-wendywei-3071870.jpg');">
                         <div class="price-badge">₹128.99</div>
                     </div>
                     <div class="cheesecake-content">
@@ -1049,120 +1588,179 @@
 
     <script>
         // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Star rating functionality
-        const stars = document.querySelectorAll('.star');
-        const ratingText = document.getElementById('rating-text');
-        let currentRating = 0;
-
-        stars.forEach(star => {
-            star.addEventListener('click', function() {
-                currentRating = parseInt(this.getAttribute('data-rating'));
-                updateStars();
-                updateRatingText();
-            });
-
-            star.addEventListener('mouseover', function() {
-                const hoverRating = parseInt(this.getAttribute('data-rating'));
-                highlightStars(hoverRating);
-            });
-        });
-
-        document.querySelector('.star-rating').addEventListener('mouseleave', function() {
-            updateStars();
-        });
-
-        function updateStars() {
-            stars.forEach((star, index) => {
-                if (index < currentRating) {
-                    star.classList.add('active');
-                } else {
-                    star.classList.remove('active');
-                }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
             });
         }
+    });
+});
 
-        function highlightStars(rating) {
-            stars.forEach((star, index) => {
-                if (index < rating) {
-                    star.style.color = '#ffd700';
-                } else {
-                    star.style.color = '#ddd';
-                }
-            });
+// Star rating functionality
+const stars = document.querySelectorAll('.star');
+const ratingText = document.getElementById('rating-text');
+let currentRating = 0;
+
+stars.forEach(star => {
+    star.addEventListener('click', function() {
+        currentRating = parseInt(this.getAttribute('data-rating'));
+        updateStars();
+        updateRatingText();
+    });
+
+    star.addEventListener('mouseover', function() {
+        const hoverRating = parseInt(this.getAttribute('data-rating'));
+        highlightStars(hoverRating);
+    });
+});
+
+document.querySelector('.star-rating').addEventListener('mouseleave', function() {
+    updateStars();
+});
+
+function updateStars() {
+    stars.forEach((star, index) => {
+        if (index < currentRating) {
+            star.classList.add('active');
+        } else {
+            star.classList.remove('active');
         }
+    });
+}
 
-        function updateRatingText() {
-            const ratings = ['', 'Poor', 'Fair', 'Good', 'Very Good', 'Excellent'];
-            ratingText.textContent = ratings[currentRating] || 'Click to rate';
+function highlightStars(rating) {
+    stars.forEach((star, index) => {
+        if (index < rating) {
+            star.style.color = '#ffd700';
+        } else {
+            star.style.color = '#ddd';
         }
+    });
+}
 
-        // Form submission
-        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+function updateRatingText() {
+    const ratings = ['', 'Poor', 'Fair', 'Good', 'Very Good', 'Excellent'];
+    ratingText.textContent = ratings[currentRating] || 'Click to rate';
+}
+
+// Form submission
+document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    if (currentRating === 0) {
+        alert('Please provide a rating before submitting your feedback.');
+        return;
+    }
+
+    // Collect form data
+    const formData = new FormData(this);
+    formData.append('rating', currentRating);
+    
+    // Simulate form submission
+    alert('🍰 Thank you so much for your wonderful feedback! We truly appreciate you taking the time to share your experience with us. Your input helps us continue creating the perfect cheesecakes for our community!');
+    
+    // Reset form
+    this.reset();
+    currentRating = 0;
+    updateStars();
+    updateRatingText();
+});
+
+// Order button functionality
+document.querySelectorAll('.order-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const cheesecakeName = this.closest('.cheesecake-item').querySelector('.cheesecake-name').textContent;
+        const price = this.closest('.cheesecake-item').querySelector('.price-badge').textContent;
+        alert(`🍰 Wonderful choice! You've selected:\n\n${cheesecakeName} - ${price}\n\nPlease call us at (555) 123-CAKE to complete your order and arrange pickup or delivery. We'll have your delicious cheesecake ready within 24 hours!`);
+    });
+});
+
+// Add scroll animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe elements for animation
+document.querySelectorAll('.cheesecake-item, .section-header').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'all 0.6s ease';
+    observer.observe(el);
+});
+
+// Mobile-specific improvements
+if ('ontouchstart' in window) {
+    // Add touch class to body for CSS targeting
+    document.body.classList.add('touch-device');
+    
+    // Improve touch interactions for star rating
+    stars.forEach(star => {
+        star.addEventListener('touchstart', function(e) {
             e.preventDefault();
-            
-            if (currentRating === 0) {
-                alert('Please provide a rating before submitting your feedback.');
-                return;
-            }
-
-            // Collect form data
-            const formData = new FormData(this);
-            formData.append('rating', currentRating);
-            
-            // Simulate form submission
-            alert('🍰 Thank you so much for your wonderful feedback! We truly appreciate you taking the time to share your experience with us. Your input helps us continue creating the perfect cheesecakes for our community!');
-            
-            // Reset form
-            this.reset();
-            currentRating = 0;
+            const rating = parseInt(this.getAttribute('data-rating'));
+            currentRating = rating;
             updateStars();
             updateRatingText();
         });
-
-        // Order button functionality
-        document.querySelectorAll('.order-button').forEach(button => {
-            button.addEventListener('click', function() {
-                const cheesecakeName = this.closest('.cheesecake-item').querySelector('.cheesecake-name').textContent;
-                const price = this.closest('.cheesecake-item').querySelector('.price-badge').textContent;
-                alert(`🍰 Wonderful choice! You've selected:\n\n${cheesecakeName} - ${price}\n\nPlease call us at (555) 123-CAKE to complete your order and arrange pickup or delivery. We'll have your delicious cheesecake ready within 24 hours!`);
-            });
+    });
+    
+    // Prevent double-tap zoom on buttons
+    document.querySelectorAll('.order-button, .submit-btn, .hero-cta').forEach(button => {
+        button.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            this.click();
         });
+    });
+}
 
-        // Add scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+// Viewport height fix for mobile browsers
+function setVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+setVH();
+window.addEventListener('resize', setVH);
+window.addEventListener('orientationchange', setVH);
 
-        // Observe elements for animation
-        document.querySelectorAll('.cheesecake-item, .section-header').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
-        });
+// Optimize scroll performance on mobile
+let ticking = false;
+
+function updateScrollEffects() {
+    const header = document.querySelector('.hero');
+    const scrolled = window.pageYOffset;
+    const parallax = scrolled * 0.3;
+    
+    if (window.innerWidth > 768) {
+        header.style.transform = `translateY(${parallax}px)`;
+    } else {
+        header.style.transform = 'none';
+    }
+    
+    ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        requestAnimationFrame(updateScrollEffects);
+        ticking = true;
+    }
+});
     </script>
 </body>
 </html>
