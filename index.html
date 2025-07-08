@@ -1421,18 +1421,6 @@
                             <input type="email" id="email" name="email" required placeholder="your.email@example.com">
                         </div>
 
-                        <div class="form-group">
-                            <label for="cheesecake">Which cheesecake did you try?</label>
-                            <select id="cheesecake" name="cheesecake" required>
-                                <option value="">Select your cheesecake</option>
-                                <option value="classic">Classic New York</option>
-                                <option value="strawberry">Strawberry Swirl</option>
-                                <option value="chocolate">Chocolate Decadence</option>
-                                <option value="lemon">Lemon Zest</option>
-                                <option value="caramel">Caramel Pecan</option>
-                                <option value="blueberry">Blueberry Bliss</option>
-                            </select>
-                        </div>
 
                         <div class="form-group">
                             <label>Overall Rating</label>
@@ -1453,18 +1441,7 @@
                             <textarea id="comments" name="comments" placeholder="Tell us about your experience, what you loved, and how we can improve..."></textarea>
                         </div>
 
-                        <div class="form-group">
-                            <label for="recommend">Would you recommend us to friends?</label>
-                            <select id="recommend" name="recommend" required>
-                                <option value="">Please select</option>
-                                <option value="definitely">Definitely! Already have!</option>
-                                <option value="probably">Probably would</option>
-                                <option value="maybe">Maybe</option>
-                                <option value="probably-not">Probably not</option>
-                                <option value="definitely-not">Definitely not</option>
-                            </select>
-                        </div>
-
+                        
                         <button type="submit" class="submit-btn">Submit Feedback</button>
                     </form>
 
@@ -1585,6 +1562,8 @@
             </div>
         </div>
     </footer>
+    <!-- SweetAlert2 CSS & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
         // Smooth scrolling for anchor links
@@ -1657,18 +1636,40 @@ document.getElementById('feedbackForm').addEventListener('submit', function(e) {
         return;
     }
 
-    // Collect form data
-    const formData = new FormData(this);
-    formData.append('rating', currentRating);
-    
-    // Simulate form submission
-    alert('🍰 Thank you so much for your wonderful feedback! We truly appreciate you taking the time to share your experience with us. Your input helps us continue creating the perfect cheesecakes for our community!');
-    
-    // Reset form
+    const formData = {
+    name: this.name.value,
+    email: this.email.value,
+    message: this.comments.value,
+    rating: currentRating
+};
+
+fetch('https://script.google.com/macros/s/AKfycbzBKAy8QehgDCG1ovZiAbu1AXRkHY50zY4n5raLUAECHQ9zjUu1evFA4bUTQTOFdsauXg/exec', {
+    method: 'POST',
+    body: JSON.stringify(formData)
+})
+.then(response => response.json())
+.then(result => {
+Swal.fire({
+  title: '🎉 Thank You!',
+  text: 'Your feedback has been successfully submitted. We truly appreciate it!',
+  icon: 'success',
+  confirmButtonText: 'OK'
+});
     this.reset();
     currentRating = 0;
     updateStars();
     updateRatingText();
+})
+.catch(error => {
+Swal.fire({
+  title: 'Oops!',
+  text: 'Something went wrong while submitting your feedback. Please try again later.',
+  icon: 'error',
+  confirmButtonText: 'Retry'
+});
+    console.error('Error:', error);
+});
+
 });
 
 // Order button functionality
